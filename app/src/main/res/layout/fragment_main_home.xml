@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkBlue"
+        app:title="To Test Material Component" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:theme="@style/DefaultButtonStyle"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/navigationBottom_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BottomNavigation"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tabs_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tabs"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/switches_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="switches"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/checkboxes_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="checkboxes"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/radioButton_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RadioButton"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

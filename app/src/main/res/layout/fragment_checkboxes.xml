@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Test Checkboxes Component"
+        android:textSize="30sp"
+        android:padding="10dp"
+        android:background="@color/darkBlue"
+        />
+
+    <CheckBox
+        android:id="@+id/checkbox_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        style="@style/Widget.App.CheckBox"
+        android:text="checkbox 1" />
+
+    <CheckBox
+        android:id="@+id/checkbox_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.App.CheckBox"
+        android:checked="true"
+        android:text="checkbox 2" />
+
+    <CheckBox
+        android:id="@+id/checkbox_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.App.CheckBox"
+        android:text="checkbox 3" />
+
+    <CheckBox
+        android:id="@+id/checkbox_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:useMaterialThemeColors="false"
+        style="@style/Widget.App.CheckBoxButtonTint"
+        android:text="checkbox 4" />
+
+    <CheckBox
+        android:id="@+id/checkbox_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.App.CheckBox"
+        android:text="checkbox 5" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

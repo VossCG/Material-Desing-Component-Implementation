@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Test Switches Component"
+        android:textSize="30sp"
+        android:padding="10dp"
+        android:background="@color/darkBlue"
+        />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/setting_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="設定"
+        android:checked="true"
+        style="@style/Widget.App.Switch"
+        />
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/airplaneMode_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="飛航模式"
+        style="@style/Widget.App.Switch"
+        />
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/getMessage_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="接受訊息"
+        android:checked="true"
+        style="@style/Widget.App.Switch"
+        />
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/getNotification_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="接收通知"
+        style="@style/Widget.App.Switch"
+        />
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/hotSpot_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="個人熱點"
+        style="@style/Widget.App.Switch"
+        />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

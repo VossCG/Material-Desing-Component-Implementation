@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Primary brand color. -->
+    <color name="primaryColor">@color/darkGrey</color>
+    <color name="primaryLightColor">@color/lightGreen</color>
+    <color name="primaryDarkColor">@color/black</color>
+    <color name="primaryTextColor">@color/white</color>
+    <!-- Secondary brand color. -->
+    <color name="secondaryColor">@color/lightGrey</color>
+    <color name="secondaryLightColor">#a4a4a4</color>
+    <color name="secondaryDarkColor">#494949</color>
+    <color name="secondaryTextColor">#EDEDED</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lightBlue">#4C73A1</color>
+    <color name="darkBrown">#5C441C</color>
+    <color name="lightBrown">#D4A048</color>
+    <color name="lightGrey">#757575</color>
+    <color name="darkGrey">#4D4D4D</color>
+    <color name="tealBlue">#115569</color>
+    <color name="darkBlue">#1B294F</color>
+    <color name="darkYellow">#CFB13C</color>
+    <color name="orange">#C47525</color>
+    <color name="lightGreen">#76CC71</color>
+    <color name="lightYellow">#BA7E23</color>
+    <color name="darkGreen">#118E40</color>
+</resources>

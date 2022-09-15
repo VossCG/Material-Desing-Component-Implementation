@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeMainFragment">
+
+    <fragment
+        android:id="@+id/tabsFragment"
+        android:name="com.voss.ithomeironcontest.tabs.TabsFragment"
+        android:label="TabsFragment"
+        tools:layout="@layout/fragment_tabs">
+
+    </fragment>
+    <fragment
+        android:id="@+id/sectionHeaderFragment"
+        android:name="com.voss.ithomeironcontest.sectionRecycler.SectionHeaderFragment"
+        android:label="SectionHeaderFragment"
+        tools:layout="@layout/fragment_section_header_recycler" />
+    <fragment
+        android:id="@+id/homeMainFragment"
+        tools:layout="@layout/fragment_main_home"
+        android:name="com.voss.ithomeironcontest.HomeMainFragment"
+        android:label="HomeMainFragment" >
+        <action
+            android:id="@+id/action_homeMainFragment_to_tabsFragment"
+            app:destination="@id/tabsFragment" />
+        <action
+            android:id="@+id/action_homeMainFragment_to_bottomNavigationFragment"
+            app:destination="@id/bottomNavigationFragment" />
+        <action
+            android:id="@+id/action_homeMainFragment_to_switchesFragment"
+            app:destination="@id/switchesFragment" />
+        <action
+            android:id="@+id/action_homeMainFragment_to_checkboxesFragment"
+            app:destination="@id/checkboxesFragment" />
+        <action
+            android:id="@+id/action_homeMainFragment_to_radioButtonFragment"
+            app:destination="@id/radioButtonFragment" />
+        <action
+            android:id="@+id/action_homeMainFragment_to_buttonFragment"
+            app:destination="@id/buttonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bottomNavigationFragment"
+        tools:layout="@layout/fragment_bottom_navigation"
+        android:name="com.voss.ithomeironcontest.bottomNavigation.BottomNavigationFragment"
+        android:label="BottomNavigationFragment" />
+    <fragment
+        android:id="@+id/switchesFragment"
+        tools:layout="@layout/fragment_switches"
+        android:name="com.voss.ithomeironcontest.selectionControl.SwitchesFragment"
+        android:label="SwitchesFragment" />
+    <fragment
+        android:id="@+id/checkboxesFragment"
+        tools:layout="@layout/fragment_checkboxes"
+        android:name="com.voss.ithomeironcontest.selectionControl.CheckboxesFragment"
+        android:label="CheckboxesFragment" />
+    <fragment
+        android:id="@+id/radioButtonFragment"
+        tools:layout="@layout/fragment_radio_button"
+        android:name="com.voss.ithomeironcontest.selectionControl.RadioButtonFragment"
+        android:label="RadioButtonFragment" />
+    <fragment
+        android:id="@+id/buttonFragment"
+        tools:layout="@layout/fragment_button"
+        android:name="com.voss.ithomeironcontest.button.ButtonFragment"
+        android:label="ButtonFragment" />
+</navigation>
