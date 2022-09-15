@@ -53,6 +53,12 @@
             android:layout_height="wrap_content"
             android:text="Button"
             />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/textField_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="text field"
+            />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

@@ -40,6 +40,9 @@
         <action
             android:id="@+id/action_homeMainFragment_to_buttonFragment"
             app:destination="@id/buttonFragment" />
+        <action
+            android:id="@+id/action_homeMainFragment_to_textFieldsFragment"
+            app:destination="@id/textFieldsFragment" />
     </fragment>
     <fragment
         android:id="@+id/bottomNavigationFragment"
@@ -66,4 +69,9 @@
         tools:layout="@layout/fragment_button"
         android:name="com.voss.ithomeironcontest.button.ButtonFragment"
         android:label="ButtonFragment" />
+    <fragment
+        android:id="@+id/textFieldsFragment"
+        tools:layout="@layout/fragment_text_fields"
+        android:name="com.voss.ithomeironcontest.textfields.TextFieldsFragment"
+        android:label="TextFieldsFragment" />
 </navigation>

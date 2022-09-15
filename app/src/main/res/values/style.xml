@@ -94,4 +94,43 @@
         <!--   strokeColor、checked text、icon color      -->
         <item name="colorSurface">@color/lightYellow</item>
     </style>
+
+    <style name="Widget.App.OutlinedBox.DropDownMenu" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.ToggleButton</item>
+    </style>
+
+    <style name="ThemeOverlay.App.OutlinedBox.DropDownMenu" parent="">
+        <item name="colorOnSurface">@color/white</item>
+        <item name="colorSurface">@color/lightYellow</item>
+    </style>
+
+    <style name="Widget.App.TextInputLayout.OutlinedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.TextInputLayout.OutlinedBox</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
+        <item name="hintTextColor">@color/white</item>
+    </style>
+
+    <style name="ThemeOverlay.App.TextInputLayout.OutlinedBox" parent="">
+        <item name="colorPrimary">@color/lightYellow</item>
+        <item name="colorOnSurface">@android:color/holo_green_light</item>
+        <item name="colorError">@color/red</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.App.Subtitle1</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.App.Caption</item>
+        <item name="editTextStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox</item>
+    </style>
+
+    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+    <style name="TextAppearance.App.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/alatsi</item>
+        <item name="android:fontFamily">@font/alatsi</item>
+    </style>
+
+    <style name="TextAppearance.App.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/alatsi</item>
+        <item name="android:fontFamily">@font/alatsi</item>
+    </style>
+
 </resources>
