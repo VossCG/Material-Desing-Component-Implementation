@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <style name="Theme.IThomeIRonContest.ActionMode">
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeStyle">@style/Widget.App.ActionMode</item>
+        <item name="actionModeCloseDrawable">@drawable/ic_baseline_close_24</item>
+        <item name="actionBarTheme">@style/ThemeOverlay.MaterialComponents.Dark.ActionBar</item>
+    </style>
+
+    <style name="Widget.App.ActionMode" parent="Widget.AppCompat.ActionMode">
+        <item name="titleTextStyle">?attr/textAppearanceHeadline6</item>
+        <item name="subtitleTextStyle">?attr/textAppearanceSubtitle1</item>
+        <item name="background">?attr/colorSurface</item>
+    </style>
+
     <style name="DefaultTextViewStyle" parent="Widget.MaterialComponents.TextView">
         <item name="android:textSize">20sp</item>
         <item name="android:textColor">@color/white</item>
@@ -116,13 +129,15 @@
         <item name="colorError">@color/red</item>
         <item name="textAppearanceSubtitle1">@style/TextAppearance.App.Subtitle1</item>
         <item name="textAppearanceCaption">@style/TextAppearance.App.Caption</item>
-        <item name="editTextStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox</item>
+        <item name="editTextStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox
+        </item>
     </style>
 
     <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
         <item name="cornerFamily">cut</item>
         <item name="cornerSize">4dp</item>
     </style>
+
     <style name="TextAppearance.App.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
         <item name="fontFamily">@font/alatsi</item>
         <item name="android:fontFamily">@font/alatsi</item>
@@ -131,6 +146,18 @@
     <style name="TextAppearance.App.Caption" parent="TextAppearance.MaterialComponents.Caption">
         <item name="fontFamily">@font/alatsi</item>
         <item name="android:fontFamily">@font/alatsi</item>
+    </style>
+
+    <style name="Widget.App.Toolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Toolbar</item>
+        <item name="titleTextAppearance">@style/TextAppearance.MaterialComponents.Headline6</item>
+        <item name="subtitleTextAppearance">@style/TextAppearance.App.Subtitle1</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Toolbar" parent="">
+        <item name="colorPrimary">@color/darkBlue</item>
+        <item name="colorPrimaryVariant">@color/lightBlue</item>
+        <item name="colorOnPrimary">@color/white</item>
     </style>
 
 </resources>

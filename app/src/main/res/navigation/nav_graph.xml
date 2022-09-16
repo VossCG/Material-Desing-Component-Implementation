@@ -43,6 +43,9 @@
         <action
             android:id="@+id/action_homeMainFragment_to_textFieldsFragment"
             app:destination="@id/textFieldsFragment" />
+        <action
+            android:id="@+id/action_homeMainFragment_to_topBarRegularFragment"
+            app:destination="@id/topBarRegularFragment" />
     </fragment>
     <fragment
         android:id="@+id/bottomNavigationFragment"
@@ -74,4 +77,27 @@
         tools:layout="@layout/fragment_text_fields"
         android:name="com.voss.ithomeironcontest.textfields.TextFieldsFragment"
         android:label="TextFieldsFragment" />
+    <fragment
+        android:id="@+id/topBarRegularFragment"
+        tools:layout="@layout/fragment_top_bar_regular"
+        android:name="com.voss.ithomeironcontest.topbar.TopBarRegularFragment"
+        android:label="TopBarRegularFragment" >
+        <action
+            android:id="@+id/action_topBarRegularFragment_to_prominentTopBarFragment"
+            app:destination="@id/prominent_topBar" />
+        <action
+            android:id="@+id/action_topBarRegularFragment_to_topBarContextualFragment"
+            app:destination="@id/topBarContextualFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/prominent_topBar"
+        tools:layout="@layout/fragment_top_bar_prominent"
+        android:name="com.voss.ithomeironcontest.topbar.TopBarProminentFragment"
+        android:label="TopBarProminentFragment" />
+    <fragment
+        android:id="@+id/topBarContextualFragment"
+        tools:layout="@layout/fragment_top_bar_contextual"
+        android:name="com.voss.ithomeironcontest.topbar.TopBarContextualFragment"
+        android:label="TopBarContextualFragment" />
+
 </navigation>

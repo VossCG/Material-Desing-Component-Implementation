@@ -34,5 +34,8 @@ class HomeMainFragment:BaseFragment<FragmentMainHomeBinding>(FragmentMainHomeBin
         binding.textFieldBtn.setOnClickListener {
             navController.navigate(R.id.action_homeMainFragment_to_textFieldsFragment)
         }
+        binding.topBarBtn.setOnClickListener {
+            navController.navigate(R.id.action_homeMainFragment_to_topBarRegularFragment)
+        }
     }
 }
