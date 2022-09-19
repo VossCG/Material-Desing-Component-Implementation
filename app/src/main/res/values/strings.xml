@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">IThome IRon Contest</string>
+    <array name="ranger_slider" >
+        <item>10</item>
+        <item>40</item>
+    </array>
 </resources>

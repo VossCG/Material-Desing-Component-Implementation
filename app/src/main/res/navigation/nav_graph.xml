@@ -46,6 +46,9 @@
         <action
             android:id="@+id/action_homeMainFragment_to_topBarRegularFragment"
             app:destination="@id/topBarRegularFragment" />
+        <action
+            android:id="@+id/action_homeMainFragment_to_sliderFragment"
+            app:destination="@id/sliderFragment" />
     </fragment>
     <fragment
         android:id="@+id/bottomNavigationFragment"
@@ -99,5 +102,10 @@
         tools:layout="@layout/fragment_top_bar_contextual"
         android:name="com.voss.ithomeironcontest.topbar.TopBarContextualFragment"
         android:label="TopBarContextualFragment" />
+    <fragment
+        android:id="@+id/sliderFragment"
+        tools:layout="@layout/fragment_slider"
+        android:name="com.voss.ithomeironcontest.slider.SliderFragment"
+        android:label="SliderFragment" />
 
 </navigation>
