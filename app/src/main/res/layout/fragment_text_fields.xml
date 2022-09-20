@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/darkGrey"
     android:orientation="vertical">
 
     <TextView
@@ -43,7 +44,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/components_margin_top"
-                android:hint="Account"
+                android:hint="Add leading icon"
                 app:startIconDrawable="@drawable/ic_baseline_account_circle_24">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -58,7 +59,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/components_margin_top"
-                android:hint="Password"
+                android:hint="Password toggle"
                 app:endIconMode="password_toggle"
                 app:startIconDrawable="@drawable/ic_baseline_password_24">
 
@@ -76,14 +77,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/components_margin_top"
-                android:hint="Search"
+                android:hint="Clear text "
                 app:endIconMode="clear_text"
+                app:hintAnimationEnabled="false"
                 app:startIconDrawable="@drawable/ic_baseline_search_24">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    />
+                    android:layout_height="wrap_content" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -93,14 +94,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/components_margin_top"
-                android:hint="Dashboard"
+                android:hint="custom Mode"
                 app:endIconDrawable="@drawable/ic_baseline_dashboard_24"
                 app:endIconMode="custom">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    />
+                    android:layout_height="wrap_content" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -124,39 +124,37 @@
 
             <!-- helper text -->
             <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/components_margin_top"
                 android:hint="Helper Text Demo"
-                app:helperTextTextColor="@color/orange"
-                app:helperTextEnabled="true"
-                app:helperText="Helper Text"
                 app:endIconMode="clear_text"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                >
+                app:helperText="Helper Text"
+                app:helperTextEnabled="true"
+                app:helperTextTextColor="@color/orange">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    />
+                    android:layout_height="wrap_content" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <!-- counter text -->
             <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/components_margin_top"
                 android:hint="Counter Text Demo"
                 app:counterEnabled="true"
                 app:counterMaxLength="20"
-                app:endIconMode="clear_text"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                >
+                app:endIconMode="clear_text">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:maxLength="20"
                     android:inputType="textPassword" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -164,58 +162,56 @@
             <!-- error text -->
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/text_error_textField_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/components_margin_top"
                 android:hint="Error Text Demo"
-                app:errorEnabled="true"
-                app:counterMaxLength="20"
+                app:helperText="Test error override"
+                app:endIconMode="clear_text"
                 app:counterEnabled="true"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                >
+                app:counterMaxLength="20"
+                app:errorEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/text_error_textField"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    />
+                    android:layout_height="wrap_content" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <!-- prefix、suffix text -->
             <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/components_margin_top"
                 android:hint="prefix suffix Demo"
-                app:startIconDrawable="@drawable/ic_baseline_search_24"
-                app:endIconMode="custom"
                 app:endIconDrawable="@drawable/ic_baseline_check_circle_24"
-                app:suffixText="suff"
-                app:suffixTextColor="@color/lightYellow"
+                app:endIconMode="custom"
                 app:prefixText="pre"
                 app:prefixTextColor="@color/darkYellow"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                >
+                app:startIconDrawable="@drawable/ic_baseline_search_24"
+                app:suffixText="suff"
+                app:suffixTextColor="@color/lightYellow">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:inputType="number"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    />
+                    android:layout_height="wrap_content" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <!-- custom style demo -->
             <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.App.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/components_margin_top"
                 android:hint="Custom Style Demo"
                 app:counterEnabled="true"
                 app:counterMaxLength="20"
-                app:endIconMode="clear_text"
-                style="@style/Widget.App.TextInputLayout.OutlinedBox"
-                >
+                app:endIconMode="clear_text">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"

@@ -14,8 +14,7 @@ class TextFieldsFragment :
         super.onViewCreated(view, savedInstanceState)
 
         val dropMenuList = listOf("Material", "Design", "Components", "Android")
-        val menuAdapter =
-            ArrayAdapter(requireContext(), R.layout.itemview_dropmenu_item, dropMenuList)
+        val menuAdapter = ArrayAdapter(requireContext(), R.layout.itemview_dropmenu_item, dropMenuList)
         binding.dropDownAutoText.setAdapter(menuAdapter)
         binding.textErrorTextField.addTextChangedListener {
             if (binding.textErrorTextField.text.toString().length > 20)
