@@ -40,5 +40,8 @@ class HomeMainFragment:BaseFragment<FragmentMainHomeBinding>(FragmentMainHomeBin
         binding.sliderBtn.setOnClickListener {
             navController.navigate(R.id.action_homeMainFragment_to_sliderFragment)
         }
+        binding.fabSBtn.setOnClickListener {
+            navController.navigate(R.id.action_homeMainFragment_to_FABsFragment)
+        }
     }
 }

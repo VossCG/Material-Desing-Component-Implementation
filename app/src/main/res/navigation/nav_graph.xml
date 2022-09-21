@@ -49,6 +49,9 @@
         <action
             android:id="@+id/action_homeMainFragment_to_sliderFragment"
             app:destination="@id/sliderFragment" />
+        <action
+            android:id="@+id/action_homeMainFragment_to_FABsFragment"
+            app:destination="@id/FABsFragment" />
     </fragment>
     <fragment
         android:id="@+id/bottomNavigationFragment"
@@ -107,5 +110,10 @@
         tools:layout="@layout/fragment_slider"
         android:name="com.voss.ithomeironcontest.slider.SliderFragment"
         android:label="SliderFragment" />
+    <fragment
+        android:id="@+id/FABsFragment"
+        tools:layout="@layout/fragment_fabs"
+        android:name="com.voss.ithomeironcontest.fabs.FABsFragment"
+        android:label="FABsFragment" />
 
 </navigation>

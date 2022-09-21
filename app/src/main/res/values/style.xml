@@ -160,4 +160,16 @@
         <item name="colorOnPrimary">@color/white</item>
     </style>
 
+    <style name="Widget.App.FloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.FloatingActionButton</item>
+        <item name="android:clickable">true</item>
+        <item name="rippleColor">@color/white</item>
+        <item name="android:layout_margin">16dp</item>
+    </style>
+
+    <style name="ThemeOverlay.App.FloatingActionButton" parent="">
+        <item name="colorSecondary">@color/darkBlue</item>
+        <item name="colorOnSecondary">@color/lightBlue</item>
+        <item name="colorOnSurface">@color/lightBlue</item>
+    </style>
 </resources>

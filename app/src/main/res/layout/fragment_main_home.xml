@@ -11,67 +11,77 @@
         android:background="@color/darkBlue"
         app:title="To Test Material Component" />
 
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:theme="@style/DefaultButtonStyle"
+    <ScrollView
         android:layout_width="match_parent"
-        android:orientation="vertical"
         android:layout_height="match_parent">
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/navigationBottom_btn"
+        <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="BottomNavigation"
-            />
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/tabs_btn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Tabs"
-            />
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/switches_btn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="switches"
-            />
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/checkboxes_btn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="checkboxes"
-            />
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/radioButton_btn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="RadioButton"
-            />
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/button_btn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button"
-            />
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/textField_btn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="text field"
-            />
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/topBar_btn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Top bar"
-            />
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/slider_btn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Slider"
-            />
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:theme="@style/DefaultButtonStyle">
 
-    </androidx.appcompat.widget.LinearLayoutCompat>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/navigationBottom_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BottomNavigation" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tabs_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tabs" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/switches_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="switches" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/checkboxes_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="checkboxes" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/radioButton_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/textField_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="text field" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/topBar_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Top bar" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/slider_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Slider" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/fabS_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FABs" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
