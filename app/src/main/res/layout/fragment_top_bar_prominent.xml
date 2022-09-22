@@ -16,19 +16,19 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fitsSystemWindows="true"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
             app:contentScrim="?attr/colorPrimary"
-            app:statusBarScrim="?attr/colorPrimaryVariant"
             app:expandedTitleMarginBottom="28dp"
-            app:expandedTitleMarginStart="32dp">
+            app:expandedTitleMarginStart="32dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:statusBarScrim="?attr/colorPrimaryVariant">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:contentDescription="landscape"
                 android:fitsSystemWindows="true"
                 android:scaleType="centerCrop"
-                android:src="@drawable/landscape"
-                android:contentDescription="landscape" />
+                android:src="@drawable/landscape" />
 
             <!-- Prominent Bar change to Regular Bar -->
             <com.google.android.material.appbar.MaterialToolbar
@@ -39,11 +39,10 @@
                 android:background="@android:color/transparent"
                 android:elevation="0dp"
                 app:layout_collapseMode="pin"
-                app:titleTextColor="@color/lightBlue"
-                app:title="Prominent Image"
                 app:menu="@menu/top_bar"
                 app:navigationIcon="@drawable/ic_baseline_menu_24"
-                />
+                app:title="Prominent Image"
+                app:titleTextColor="@color/lightBlue" />
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
