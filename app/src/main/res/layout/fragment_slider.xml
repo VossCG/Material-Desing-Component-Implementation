@@ -9,9 +9,8 @@
         android:id="@+id/continuous_slider_value_tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Continuoust Slider Value :"
         android:padding="10dp"
-        />
+        android:text="Continuoust Slider Value :" />
 
     <!-- Continuous slider -->
     <com.google.android.material.slider.Slider
@@ -19,6 +18,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:value="30.0"
+        style="@style/Widget.App.Slider"
+        app:haloColor="@color/darkGreen"
         android:valueFrom="0.0"
         android:valueTo="100.0" />
 
@@ -26,9 +27,8 @@
         android:id="@+id/continuous_range_slider_value_tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Continuous Range Slider Value :"
         android:padding="10dp"
-        />
+        android:text="Continuous Range Slider Value :" />
 
     <!-- Continuous Range slider   -->
     <com.google.android.material.slider.RangeSlider
@@ -36,6 +36,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:valueFrom="0.0"
+        app:haloColor="@color/lightYellow"
         android:valueTo="100.0"
         app:values="@array/ranger_slider" />
 
@@ -44,35 +45,34 @@
         android:id="@+id/discrete_slider_value_tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Discrete Slider Value :"
         android:padding="10dp"
-        />
+        android:text="Discrete Slider Value :" />
 
     <!-- Discrete slider -->
     <com.google.android.material.slider.Slider
         android:id="@+id/discrete_slider"
-        android:value="30"
-        android:valueTo="100"
-        android:stepSize="10"
-        android:valueFrom="0"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:stepSize="10"
+        android:value="30"
+        style="@style/Widget.App.Slider"
+        android:valueFrom="0"
+        android:valueTo="100" />
 
     <TextView
         android:id="@+id/discrete_range_slider_value_tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Discrete Range Slider Value :"
         android:padding="10dp"
-        />
+        android:text="Discrete Range Slider Value :" />
 
     <!-- Discrete Ranger slider -->
     <com.google.android.material.slider.RangeSlider
         android:id="@+id/discrete_range_slider"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:valueFrom="0.0"
         android:stepSize="10"
+        android:valueFrom="0.0"
         android:valueTo="100.0"
         app:values="@array/ranger_slider" />
 

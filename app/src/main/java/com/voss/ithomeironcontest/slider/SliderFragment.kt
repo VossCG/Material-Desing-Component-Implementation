@@ -50,7 +50,7 @@ class SliderFragment : BaseFragment<FragmentSliderBinding>(FragmentSliderBinding
             override fun onStartTrackingTouch(slider: RangeSlider) {
                 Toast.makeText(
                     requireContext(),
-                    "Continuous Range Slider StartTracking",
+                    "Ranger Slider StartTracking",
                     Toast.LENGTH_SHORT
                 ).show()
             }
@@ -58,17 +58,17 @@ class SliderFragment : BaseFragment<FragmentSliderBinding>(FragmentSliderBinding
             override fun onStopTrackingTouch(slider: RangeSlider) {
                 Toast.makeText(
                     requireContext(),
-                    "Continuous Slider StopTracking",
+                    "Ranger Slider StopTracking",
                     Toast.LENGTH_SHORT
                 ).show()
             }
 
         })
         binding.continuousRangeSlider.addOnChangeListener { slider, value, fromUser ->
-            binding.continuousRangeSliderValueTv.text = "Range Slider Value : $value"
+            binding.continuousRangeSliderValueTv.text = " Con RangSlider Value : $value"
         }
         binding.discreteRangeSlider.addOnChangeListener { slider, value, fromUser ->
-            binding.discreteRangeSliderValueTv.text = "Slider Value : $value"
+            binding.discreteRangeSliderValueTv.text = "Dis RangerSlider Value : $value"
         }
         // change label format to USD
         binding.continuousRangeSlider.setLabelFormatter { value: Float ->

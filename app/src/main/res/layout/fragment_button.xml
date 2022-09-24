@@ -144,7 +144,7 @@
             android:theme="@style/ThemeOverlay.App.ToggleButton"
             app:selectionRequired="true">
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/toggle_button1"
                 style="?attr/materialButtonOutlinedStyle"
                 android:layout_width="match_parent"
@@ -152,7 +152,7 @@
                 android:layout_weight="1"
                 android:text="Button 1" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/toggle_button2"
                 style="?attr/materialButtonOutlinedStyle"
                 android:layout_width="match_parent"
@@ -160,7 +160,7 @@
                 android:layout_weight="1"
                 android:text="Button 2" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/toggle_button3"
                 style="?attr/materialButtonOutlinedStyle"
                 android:layout_width="match_parent"
