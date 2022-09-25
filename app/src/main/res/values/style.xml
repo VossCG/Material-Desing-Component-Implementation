@@ -50,13 +50,8 @@
     <style name="Widget.App.CheckBox" parent="Widget.MaterialComponents.CompoundButton.CheckBox">
         <item name="android:textSize">20sp</item>
         <item name="android:padding">10dp</item>
-        <item name="materialThemeOverlay">@style/ThemeOverlay.App.CheckBox</item>
-    </style>
-
-    <style name="Widget.App.CheckBoxButtonTint" parent="Widget.MaterialComponents.CompoundButton.CheckBox">
         <item name="buttonTint">@color/checkboxes_tint_selector</item>
-        <item name="android:textSize">20sp</item>
-        <item name="android:padding">10dp</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.CheckBox</item>
     </style>
 
     <style name="ThemeOverlay.App.CheckBox" parent="">
