@@ -13,7 +13,7 @@
         android:text="Test Checkboxes Component"
         android:textSize="30sp" />
 
-    <CheckBox
+    <com.google.android.material.checkbox.MaterialCheckBox
         android:id="@+id/checkbox_1"
         style="@style/Widget.App.CheckBox"
         android:layout_width="match_parent"
@@ -21,7 +21,7 @@
         android:checked="true"
         android:text="checkbox 1" />
 
-    <CheckBox
+    <com.google.android.material.checkbox.MaterialCheckBox
         android:id="@+id/checkbox_2"
         style="@style/Widget.App.CheckBox"
         android:layout_width="match_parent"
@@ -29,34 +29,34 @@
         android:checked="true"
         android:text="checkbox 2" />
 
-    <CheckBox
+    <com.google.android.material.checkbox.MaterialCheckBox
         android:id="@+id/checkbox_3"
         style="@style/Widget.App.CheckBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="checkbox 3" />
 
-    <CheckBox
+    <com.google.android.material.checkbox.MaterialCheckBox
         android:id="@+id/checkbox_4"
-        style="@style/Widget.App.CheckBox"
+        style="@style/Widget.App.CheckBoxButtonTint"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="checkbox 4"
-        app:useMaterialThemeColors="false" />
+        android:text="checkbox 4" />
 
-    <CheckBox
+    <com.google.android.material.checkbox.MaterialCheckBox
         android:id="@+id/checkbox_5"
-        style="@style/Widget.App.CheckBox"
+        style="@style/Widget.App.CheckBoxButtonTint"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:checked="true"
         android:text="checkbox 5" />
 
-    <CheckBox
+    <com.google.android.material.checkbox.MaterialCheckBox
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-        android:padding="10dp"
         android:button="@drawable/favorite_selector"
+        android:padding="10dp"
         android:text="favorite checkboxes" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>
