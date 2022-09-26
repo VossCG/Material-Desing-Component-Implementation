@@ -43,5 +43,8 @@ class HomeMainFragment:BaseFragment<FragmentMainHomeBinding>(FragmentMainHomeBin
         binding.fabSBtn.setOnClickListener {
             navController.navigate(R.id.action_homeMainFragment_to_FABsFragment)
         }
+        binding.progressIndicatorBtn.setOnClickListener{
+            navController.navigate(R.id.action_homeMainFragment_to_progressIndicatorsFragment)
+        }
     }
 }

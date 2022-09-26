@@ -33,4 +33,10 @@
     <color name="lightYellow">#BA7E23</color>
     <color name="darkGreen">#118E40</color>
     <color name="transparent">#00FFFFFF</color>
+
+    <integer-array name="progress_colors">
+        <item>@color/red</item>
+        <item>@color/lightYellow</item>
+        <item>@color/darkGreen</item>
+    </integer-array>
 </resources>

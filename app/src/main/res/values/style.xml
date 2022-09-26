@@ -186,4 +186,13 @@
         <item name="android:fontFamily">@font/amiko_semibold</item>
     </style>
 
+    <style name="Widget.App.CircularProgressIndicator" parent="Widget.MaterialComponents.CircularProgressIndicator">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.CircularProgressIndicator</item>
+        <item name="trackThickness">20dp</item>
+    </style>
+
+    <style name="ThemeOverlay.App.CircularProgressIndicator" parent="">
+        <item name="colorPrimary">@color/lightBlue</item>
+    </style>
+
 </resources>

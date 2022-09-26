@@ -12,11 +12,7 @@
         tools:layout="@layout/fragment_tabs">
 
     </fragment>
-    <fragment
-        android:id="@+id/sectionHeaderFragment"
-        android:name="com.voss.ithomeironcontest.sectionRecycler.SectionHeaderFragment"
-        android:label="SectionHeaderFragment"
-        tools:layout="@layout/fragment_section_header_recycler" />
+
     <fragment
         android:id="@+id/homeMainFragment"
         tools:layout="@layout/fragment_main_home"
@@ -52,6 +48,9 @@
         <action
             android:id="@+id/action_homeMainFragment_to_FABsFragment"
             app:destination="@id/FABsFragment" />
+        <action
+            android:id="@+id/action_homeMainFragment_to_progressIndicatorsFragment"
+            app:destination="@id/progressIndicatorsFragment" />
     </fragment>
     <fragment
         android:id="@+id/bottomNavigationFragment"
@@ -115,5 +114,9 @@
         tools:layout="@layout/fragment_fabs"
         android:name="com.voss.ithomeironcontest.fabs.FABsFragment"
         android:label="FABsFragment" />
-
+    <fragment
+        android:id="@+id/progressIndicatorsFragment"
+        tools:layout="@layout/fragment_progress_indicator"
+        android:name="com.voss.ithomeironcontest.progressindicators.ProgressIndicatorsFragment"
+        android:label="ProgressIndicatorsFragment" />
 </navigation>
