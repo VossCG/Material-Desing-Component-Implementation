@@ -195,4 +195,18 @@
         <item name="colorPrimary">@color/lightBlue</item>
     </style>
 
+    <style name="ThemeOverlay.App.SnackBar" parent="">
+        <!-- SnackBar backgroundTint -->
+        <item name="colorOnSurface">@color/black</item>
+    </style>
+
+    <style name="Widget.App.Snackbar" parent="Widget.MaterialComponents.Snackbar">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.SnackBar</item>
+        <item name="animationMode">slide</item>
+        <item name="actionTextColorAlpha">0.6</item>
+    </style>
+    <style name="Widget.App.SnackbarButton" parent="Widget.MaterialComponents.Button.TextButton.Snackbar">
+        <item name="android:textColor">@color/lightBlue</item>
+    </style>
+
 </resources>

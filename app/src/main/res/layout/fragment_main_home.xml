@@ -80,11 +80,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="FABs" />
+
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/progress_indicator_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Progress Indicator" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/snackbar_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SnackBar" />
+
         </androidx.appcompat.widget.LinearLayoutCompat>
     </ScrollView>
 

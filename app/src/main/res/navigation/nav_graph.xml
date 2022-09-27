@@ -51,6 +51,9 @@
         <action
             android:id="@+id/action_homeMainFragment_to_progressIndicatorsFragment"
             app:destination="@id/progressIndicatorsFragment" />
+        <action
+            android:id="@+id/action_homeMainFragment_to_snackBarFragment"
+            app:destination="@id/snackBarFragment" />
     </fragment>
     <fragment
         android:id="@+id/bottomNavigationFragment"
@@ -119,4 +122,9 @@
         tools:layout="@layout/fragment_progress_indicator"
         android:name="com.voss.ithomeironcontest.progressindicators.ProgressIndicatorsFragment"
         android:label="ProgressIndicatorsFragment" />
+    <fragment
+        android:id="@+id/snackBarFragment"
+        tools:layout="@layout/fragment_snackbar"
+        android:name="com.voss.ithomeironcontest.snackbar.SnackBarFragment"
+        android:label="SnackBarFragment" />
 </navigation>

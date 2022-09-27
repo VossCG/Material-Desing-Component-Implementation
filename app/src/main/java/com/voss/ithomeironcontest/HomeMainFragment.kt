@@ -46,5 +46,8 @@ class HomeMainFragment:BaseFragment<FragmentMainHomeBinding>(FragmentMainHomeBin
         binding.progressIndicatorBtn.setOnClickListener{
             navController.navigate(R.id.action_homeMainFragment_to_progressIndicatorsFragment)
         }
+        binding.snackbarBtn.setOnClickListener{
+            navController.navigate(R.id.action_homeMainFragment_to_snackBarFragment)
+        }
     }
 }
