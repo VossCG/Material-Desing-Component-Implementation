@@ -21,6 +21,13 @@ class FABsFragment:BaseFragment<FragmentFabsBinding>(FragmentFabsBinding::inflat
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.extendedFab.setOnClickListener {
+            binding.extendedFab.shrink()
+        }
+        binding.extendedOnlyTextFab.setOnClickListener {
+            // shrink can't work because this fabs only have text label
+            binding.extendedOnlyTextFab.shrink()
+        }
 
         binding.expandableFab.setOnClickListener {
             isFabExpanded = !isFabExpanded
@@ -29,16 +36,6 @@ class FABsFragment:BaseFragment<FragmentFabsBinding>(FragmentFabsBinding::inflat
             setButtonClickable(isFabExpanded)
         }
 
-    }
-
-    private fun setVisibility(isExpanded: Boolean) {
-        if (isExpanded){
-            binding.searchExpandFab.visibility = VISIBLE
-            binding.shareExpandFab.visibility = VISIBLE
-        }else{
-            binding.searchExpandFab.visibility = INVISIBLE
-            binding.shareExpandFab.visibility = INVISIBLE
-        }
     }
 
     private fun setAnimation(isExpanded: Boolean) {
@@ -52,6 +49,18 @@ class FABsFragment:BaseFragment<FragmentFabsBinding>(FragmentFabsBinding::inflat
             binding.expandableFab.startAnimation(rotateClose)
         }
     }
+
+    private fun setVisibility(isExpanded: Boolean) {
+        if (isExpanded){
+            binding.searchExpandFab.visibility = VISIBLE
+            binding.shareExpandFab.visibility = VISIBLE
+        }else{
+            binding.searchExpandFab.visibility = INVISIBLE
+            binding.shareExpandFab.visibility = INVISIBLE
+        }
+    }
+
+
     private fun setButtonClickable(isExpanded: Boolean) {
         if (isExpanded){
             binding.searchExpandFab.isClickable= true

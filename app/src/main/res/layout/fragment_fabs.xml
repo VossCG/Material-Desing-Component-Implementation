@@ -17,12 +17,14 @@
     <!-- Regular FAB -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/regular_fab"
-        style="@style/Widget.App.FloatingActionButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        style="@style/Widget.App.FloatingActionButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_baseline_edit_24" />
+        app:srcCompat="@drawable/ic_baseline_add_24"
+        />
 
     <!-- Mini FAB -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -32,14 +34,12 @@
         android:layout_gravity="bottom|right"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="100dp"
-        android:backgroundTint="@color/lightYellow"
         android:clickable="true"
         app:fabSize="mini"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:rippleColor="@color/white"
         app:srcCompat="@drawable/ic_baseline_add_24"
-        app:tint="@color/white" />
+        />
 
     <!-- Extended FAB Icon with Text  -->
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
@@ -50,6 +50,7 @@
         android:layout_margin="16dp"
         android:text="extended fab"
         app:icon="@drawable/ic_baseline_add_24"
+        style="@style/Widget.App.ExtendedFloatingActionButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
