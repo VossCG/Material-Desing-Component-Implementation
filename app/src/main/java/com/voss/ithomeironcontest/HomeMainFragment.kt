@@ -49,5 +49,8 @@ class HomeMainFragment:BaseFragment<FragmentMainHomeBinding>(FragmentMainHomeBin
         binding.snackbarBtn.setOnClickListener{
             navController.navigate(R.id.action_homeMainFragment_to_snackBarFragment)
         }
+        binding.dividerBtn.setOnClickListener {
+            navController.navigate(R.id.action_homeMainFragment_to_dividerFragment)
+        }
     }
 }

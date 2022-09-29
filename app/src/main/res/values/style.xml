@@ -211,4 +211,15 @@
         <item name="android:textColor">@color/lightBlue</item>
     </style>
 
+    <style name="Widget.App.MaterialDivider" parent="Widget.MaterialComponents.MaterialDivider">
+        <item name="dividerThickness">4dp</item>
+        <item name="dividerInsetEnd">10dp</item>
+        <item name="dividerInsetStart">10dp</item>
+        <item name="dividerColor">@color/lightYellow</item>
+    </style>
+
+    <style name="ThemeOverlay.App.MaterialDivider" parent="">
+        <item name="colorOnSurface">@color/lightYellow</item>
+    </style>
+
 </resources>

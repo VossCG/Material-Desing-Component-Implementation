@@ -54,6 +54,9 @@
         <action
             android:id="@+id/action_homeMainFragment_to_snackBarFragment"
             app:destination="@id/snackBarFragment" />
+        <action
+            android:id="@+id/action_homeMainFragment_to_dividerFragment"
+            app:destination="@id/dividerFragment" />
     </fragment>
     <fragment
         android:id="@+id/bottomNavigationFragment"
@@ -127,4 +130,9 @@
         tools:layout="@layout/fragment_snackbar"
         android:name="com.voss.ithomeironcontest.snackbar.SnackBarFragment"
         android:label="SnackBarFragment" />
+    <fragment
+        android:id="@+id/dividerFragment"
+        tools:layout="@layout/fragment_divider"
+        android:name="com.voss.ithomeironcontest.divider.DividerFragment"
+        android:label="DividerFragment" />
 </navigation>

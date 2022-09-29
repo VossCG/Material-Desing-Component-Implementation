@@ -92,6 +92,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="SnackBar" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/divider_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Divider" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
     </ScrollView>
