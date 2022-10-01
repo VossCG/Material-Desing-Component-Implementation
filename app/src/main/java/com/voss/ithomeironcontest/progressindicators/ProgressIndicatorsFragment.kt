@@ -26,7 +26,6 @@ class ProgressIndicatorsFragment :
     }
 
     private fun switchIndeterminateToDeter() {
-            testCircularFillToZero()
             binding.indeterminateCircularProgress.isIndeterminate = false
             binding.indeterminateCircularProgress.setProgressCompat(50,true)
 
