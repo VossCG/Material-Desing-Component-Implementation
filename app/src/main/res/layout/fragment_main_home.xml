@@ -98,6 +98,13 @@
                 android:layout_height="wrap_content"
                 android:text="Divider" />
 
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dialog_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dialog" />
+
+
         </androidx.appcompat.widget.LinearLayoutCompat>
     </ScrollView>
 

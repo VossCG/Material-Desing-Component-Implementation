@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name="Widget.App.ActionMode" parent="Widget.AppCompat.ActionMode">
         <item name="titleTextStyle">?attr/textAppearanceHeadline6</item>
         <item name="subtitleTextStyle">?attr/textAppearanceSubtitle1</item>
@@ -207,6 +208,7 @@
         <item name="animationMode">slide</item>
         <item name="actionTextColorAlpha">0.6</item>
     </style>
+
     <style name="Widget.App.SnackbarButton" parent="Widget.MaterialComponents.Button.TextButton.Snackbar">
         <item name="android:textColor">@color/lightBlue</item>
     </style>
@@ -220,6 +222,60 @@
 
     <style name="ThemeOverlay.App.MaterialDivider" parent="">
         <item name="colorOnSurface">@color/lightYellow</item>
+    </style>
+
+    <style name="FullDialogStyle" parent="Theme.IThomeIRonContest">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Design.BottomSheetDialog</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <!-- Dialog Container background color -->
+        <item name="colorSurface">@color/darkBlue</item>
+        <!-- Dialog Title TextStyle , must use MaterialComponents.Title.Text  -->
+        <item name="materialAlertDialogTitleTextStyle">@style/Widget.App.Dialog.Title.Text</item>
+        <!-- Dialog Body TextStyle , must use MaterialComponents.Body.Text -->
+        <item name="materialAlertDialogBodyTextStyle">@style/Widget.App.Dialog.Body.Text</item>
+        <!-- Dialog Button Style , must use MaterialComponents TextButton.Dialog -->
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.App.Dialog.TextButton.Positive</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.App.Dialog.TextButton.Negative</item>
+        <item name="buttonBarNeutralButtonStyle">@style/Widget.App.Dialog.TextButton.Neutral</item>
+        <!-- Bottom bar style -->
+        <item name="buttonBarStyle">@style/Widget.App.Dialog.BottomBar</item>
+        <!-- Top bar style -->
+        <item name="materialAlertDialogTitlePanelStyle">@style/TitlePaneStyleCenter</item>
+    </style>ㄑ
+
+    <style name="Widget.App.Dialog.Title.Text" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textColor">@color/lightYellow</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="Widget.App.Dialog.Body.Text" parent="MaterialAlertDialog.MaterialComponents.Body.Text">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Widget.App.Dialog.TextButton.Positive" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Widget.App.Dialog.TextButton.Negative" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Widget.App.Dialog.TextButton.Neutral" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Widget.App.Dialog.BottomBar" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:background">@color/lightBlue</item>
+    </style>
+
+    <style name="TitlePaneStyleCenter" parent="MaterialAlertDialog.MaterialComponents.Title.Panel.CenterStacked">
+        <item name="android:background">@color/white</item>
+        <item name="android:padding">16dp</item>
     </style>
 
 </resources>

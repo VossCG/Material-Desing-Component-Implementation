@@ -52,5 +52,8 @@ class HomeMainFragment:BaseFragment<FragmentMainHomeBinding>(FragmentMainHomeBin
         binding.dividerBtn.setOnClickListener {
             navController.navigate(R.id.action_homeMainFragment_to_dividerFragment)
         }
+        binding.dialogBtn.setOnClickListener {
+            navController.navigate(R.id.action_homeMainFragment_to_dialogFragment)
+        }
     }
 }

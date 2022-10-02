@@ -57,6 +57,9 @@
         <action
             android:id="@+id/action_homeMainFragment_to_dividerFragment"
             app:destination="@id/dividerFragment" />
+        <action
+            android:id="@+id/action_homeMainFragment_to_dialogFragment"
+            app:destination="@id/dialogFragment" />
     </fragment>
     <fragment
         android:id="@+id/bottomNavigationFragment"
@@ -135,4 +138,9 @@
         tools:layout="@layout/fragment_divider"
         android:name="com.voss.ithomeironcontest.divider.DividerFragment"
         android:label="DividerFragment" />
+    <fragment
+        android:id="@+id/dialogFragment"
+        tools:layout="@layout/fragment_dialog"
+        android:name="com.voss.ithomeironcontest.dialog.NormalDialogFragment"
+        android:label="DialogFragment" />
 </navigation>

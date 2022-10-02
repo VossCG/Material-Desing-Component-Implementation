@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.IThomeIRonContest" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+    <style name="Theme.IThomeIRonContest" parent="Theme.MaterialComponents.NoActionBar.Bridge">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/lightYellow</item>
         <item name="colorPrimaryVariant">@color/darkGrey</item>
@@ -9,7 +9,7 @@
         <item name="colorSecondary">@color/lightBlue</item>
         <item name="colorSecondaryVariant">@color/darkBlue</item>
         <item name="colorOnSecondary">@color/white</item>
-        <!-- Status bar color. -->
+        <!-- Status bar color. -->z
         <item name="android:statusBarColor">@color/black</item>
         <!-- Customize your theme here. -->
         <item name="colorOnSurface">@color/white</item>
@@ -27,6 +27,8 @@
         <item name="actionBarTheme">@style/ThemeOverlay.MaterialComponents.Dark.ActionBar</item>
 
         <item name="snackbarStyle">@style/Widget.App.Snackbar</item>
+
+        <item name="materialAlertDialogTheme">@style/AlertDialogTheme</item>
 
     </style>
 </resources>
