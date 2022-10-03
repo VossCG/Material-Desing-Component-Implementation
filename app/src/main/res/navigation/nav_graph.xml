@@ -60,6 +60,12 @@
         <action
             android:id="@+id/action_homeMainFragment_to_dialogFragment"
             app:destination="@id/dialogFragment" />
+        <action
+            android:id="@+id/action_homeMainFragment_to_draggableCardFragment"
+            app:destination="@id/draggableCardFragment" />
+        <action
+            android:id="@+id/action_homeMainFragment_to_cardViewFragment"
+            app:destination="@id/cardViewFragment" />
     </fragment>
     <fragment
         android:id="@+id/bottomNavigationFragment"
@@ -143,4 +149,14 @@
         tools:layout="@layout/fragment_dialog"
         android:name="com.voss.ithomeironcontest.dialog.NormalDialogFragment"
         android:label="DialogFragment" />
+    <fragment
+        android:id="@+id/draggableCardFragment"
+        tools:layout="@layout/fragment_draggle_cardview"
+        android:name="com.voss.ithomeironcontest.cardview.DraggableCardFragment"
+        android:label="DraggableCardFragment" />
+    <fragment
+        android:id="@+id/cardViewFragment"
+        tools:layout="@layout/fragment_cardview"
+        android:name="com.voss.ithomeironcontest.cardview.CardViewFragment"
+        android:label="CardViewFragment" />
 </navigation>

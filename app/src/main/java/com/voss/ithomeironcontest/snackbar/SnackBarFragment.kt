@@ -45,9 +45,9 @@ class SnackBarFragment : BaseFragment<FragmentSnackbarBinding>(FragmentSnackbarB
         Snackbar.make(binding.root, "Custom in code", Snackbar.LENGTH_SHORT)
             .setAnchorView(binding.bottomBtn)
             .setAction("Action") {}
-            .setBackgroundTint(getColor(R.color.lightYellow))
+            .setBackgroundTint(getColor(R.color.darkBlue))
             .setTextColor(getColor(R.color.white))
-            .setActionTextColor(getColor(R.color.tealBlue))
+            .setActionTextColor(getColor(R.color.lightYellow))
             .setAnimationMode(ANIMATION_MODE_SLIDE)
             .show()
     }

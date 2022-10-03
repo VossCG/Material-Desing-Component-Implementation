@@ -237,14 +237,17 @@
         <!-- Dialog Body TextStyle , must use MaterialComponents.Body.Text -->
         <item name="materialAlertDialogBodyTextStyle">@style/Widget.App.Dialog.Body.Text</item>
         <!-- Dialog Button Style , must use MaterialComponents TextButton.Dialog -->
-        <item name="buttonBarPositiveButtonStyle">@style/Widget.App.Dialog.TextButton.Positive</item>
-        <item name="buttonBarNegativeButtonStyle">@style/Widget.App.Dialog.TextButton.Negative</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.App.Dialog.TextButton.Positive
+        </item>
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.App.Dialog.TextButton.Negative
+        </item>
         <item name="buttonBarNeutralButtonStyle">@style/Widget.App.Dialog.TextButton.Neutral</item>
         <!-- Bottom bar style -->
         <item name="buttonBarStyle">@style/Widget.App.Dialog.BottomBar</item>
         <!-- Top bar style -->
         <item name="materialAlertDialogTitlePanelStyle">@style/TitlePaneStyleCenter</item>
-    </style>ㄑ
+    </style>
+    ㄑ
 
     <style name="Widget.App.Dialog.Title.Text" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
         <item name="android:textColor">@color/lightYellow</item>
@@ -278,4 +281,22 @@
         <item name="android:padding">16dp</item>
     </style>
 
+    <style name="Widget.App.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Card</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.App.MediumComponent</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Card" parent="">
+        <!-- Using in checkBox-->
+        <item name="colorPrimary">@color/lightYellow</item>
+        <!-- Card background color-->
+        <item name="colorSurface">@color/darkBlue</item>
+        <!-- Card ripple color -->
+        <item name="colorOnSurface">@color/lightBlue</item>
+    </style>
+
+    <style name="ShapeAppearance.App.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">8dp</item>
+    </style>
 </resources>

@@ -55,5 +55,11 @@ class HomeMainFragment:BaseFragment<FragmentMainHomeBinding>(FragmentMainHomeBin
         binding.dialogBtn.setOnClickListener {
             navController.navigate(R.id.action_homeMainFragment_to_dialogFragment)
         }
+        binding.draggableCardViewBtn.setOnClickListener {
+            navController.navigate(R.id.action_homeMainFragment_to_draggableCardFragment)
+        }
+        binding.cardViewBtn.setOnClickListener {
+            navController.navigate(R.id.action_homeMainFragment_to_cardViewFragment)
+        }
     }
 }
