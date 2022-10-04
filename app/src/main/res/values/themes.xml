@@ -28,7 +28,7 @@
 
         <item name="snackbarStyle">@style/Widget.App.Snackbar</item>
 
-        <item name="materialAlertDialogTheme">@style/AlertDialogTheme</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.App.MaterialAlertDialog</item>
 
     </style>
 </resources>

@@ -3,8 +3,10 @@ package com.voss.ithomeironcontest.dialog
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Toast
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.voss.ithomeironcontest.BaseFragment
+import com.voss.ithomeironcontest.R
 import com.voss.ithomeironcontest.databinding.FragmentDialogBinding
 
 class NormalDialogFragment : BaseFragment<FragmentDialogBinding>(FragmentDialogBinding::inflate) {
@@ -47,14 +49,17 @@ class NormalDialogFragment : BaseFragment<FragmentDialogBinding>(FragmentDialogB
 
     private fun showConfirmationDialog() {
         val singleItems = arrayOf("Item 1", "Item 2", "Item 3")
-        val checkedItem = 1
         MaterialAlertDialogBuilder(requireContext())
             .setTitle("Confirmation")
             .setPositiveButton("OK") { dialog, which -> }
             .setNegativeButton("cancel") { dialog, which ->
                 dialog.dismiss()
-            }.setSingleChoiceItems(singleItems, checkedItem) { dialog, which ->
-
+            }.setSingleChoiceItems(singleItems,0) { dialog, which ->
+                when(which){
+                    0->{Toast.makeText(requireContext(),"click first item",Toast.LENGTH_SHORT).show()}
+                    1->{Toast.makeText(requireContext(),"click second item",Toast.LENGTH_SHORT).show()}
+                    2->{Toast.makeText(requireContext(),"click third item",Toast.LENGTH_SHORT).show()}
+                }
             }.show()
     }
 
