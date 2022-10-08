@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/show_bottom_sheet_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70dp"
+            android:layout_marginHorizontal="10dp"
+            android:text="show Standard Bottom Sheet" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/show_modal_bottom_sheet_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:text="Show Modal bottom sheet" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/expand_bottom_sheet_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="bottom|end"
+            android:backgroundTint="@color/darkBlue"
+            android:transitionName="@string/trans_expand_bottomsheet"
+            app:icon="@drawable/ic_baseline_expand_less_24"
+            app:shapeAppearance="@style/ShapeAppearance.App.BottomSheet.Collapsed"
+            android:text="Expanding Sheet"
+            />
+
+    </FrameLayout>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/standard_bottom_sheet"
+        style="?attr/bottomSheetStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp"
+            >
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginVertical="10dp"
+                app:dividerColor="@color/lightGrey"
+                app:dividerThickness="6dp" />
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:subtitle="Standrad"
+                app:title="Bottom Sheet" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:background="@color/darkBlue"
+                android:theme="@style/Theme.LienarLayout.TextButton.Icon">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="Search"
+                    app:icon="@drawable/ic_baseline_search_24" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    app:icon="@drawable/ic_baseline_share_24"
+                    android:text="Share"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    app:icon="@drawable/ic_baseline_link_24"
+                    android:text="Link"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+            <include layout="@layout/itemview_list_scroll_text" />
+            <include layout="@layout/itemview_list_scroll_text" />
+            <include layout="@layout/itemview_list_scroll_text" />
+            <include layout="@layout/itemview_list_scroll_text" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

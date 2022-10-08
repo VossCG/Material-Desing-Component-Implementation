@@ -12,27 +12,19 @@ class DraggableCardFragment :
         super.onViewCreated(view, savedInstanceState)
 
 
-        binding.apply {
-            draggableCoordinatorLayout.addDraggableChild(cardview1)
-            draggableCoordinatorLayout.addDraggableChild(cardview2)
-            draggableCoordinatorLayout.addDraggableChild(cardview3)
-            draggableCoordinatorLayout.addDraggableChild(cardview4)
-            draggableCoordinatorLayout.addDraggableChild(cardview5)
-
-            draggableCoordinatorLayout.setViewDragListener(object :
-                DraggableCoordinatorLayout.ViewDragListener {
-                override fun onViewCaptured(view: View, id: Int) {
-                    if (view is MaterialCardView) {
-                        view.isDragged = true
-                    }
+        binding.draggableCoordinatorLayout.setViewDragListener(object :
+            DraggableCoordinatorLayout.ViewDragListener {
+            override fun onViewCaptured(view: View, id: Int) {
+                if (view is MaterialCardView) {
+                    view.isDragged = true
                 }
+            }
 
-                override fun onViewReleased(view: View, v: Float, v1: Float) {
-                    if (view is MaterialCardView) {
-                        view.isDragged = false
-                    }
+            override fun onViewReleased(view: View, v: Float, v1: Float) {
+                if (view is MaterialCardView) {
+                    view.isDragged = false
                 }
-            })
-        }
+            }
+        })
     }
 }

@@ -66,6 +66,9 @@
         <action
             android:id="@+id/action_homeMainFragment_to_cardViewFragment"
             app:destination="@id/cardViewFragment" />
+        <action
+            android:id="@+id/action_homeMainFragment_to_standardBottomSheetsFragment"
+            app:destination="@id/standardBottomSheetsFragment" />
     </fragment>
     <fragment
         android:id="@+id/bottomNavigationFragment"
@@ -159,4 +162,18 @@
         tools:layout="@layout/fragment_cardview"
         android:name="com.voss.ithomeironcontest.cardview.CardViewFragment"
         android:label="CardViewFragment" />
+    <fragment
+        android:id="@+id/standardBottomSheetsFragment"
+        tools:layout="@layout/fragment_standard_bottomsheets"
+        android:name="com.voss.ithomeironcontest.bottomsheets.StandardBottomSheetsFragment"
+        android:label="StandardBottomSheetsFragment" >
+        <action
+            android:id="@+id/action_standardBottomSheetsFragment_to_expandingBottomSheetFragment"
+            app:destination="@id/expandingBottomSheetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/expandingBottomSheetFragment"
+        tools:layout="@layout/fragment_expanding_bottom_sheet"
+        android:name="com.voss.ithomeironcontest.bottomsheets.ExpandingBottomSheetFragment"
+        android:label="ExpandingBottomSheetFragment" />
 </navigation>

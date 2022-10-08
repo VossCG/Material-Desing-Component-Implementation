@@ -114,6 +114,12 @@
                 android:layout_height="wrap_content"
                 android:text="CardView" />
 
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bottomSheet_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bottom Sheet" />
+
 
         </androidx.appcompat.widget.LinearLayoutCompat>
     </ScrollView>

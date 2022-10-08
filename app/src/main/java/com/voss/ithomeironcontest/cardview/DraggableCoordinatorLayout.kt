@@ -6,9 +6,14 @@ import android.view.MotionEvent
 import android.view.View
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.customview.widget.ViewDragHelper
+import kotlin.math.max
+import kotlin.math.min
 
 
-class DraggableCoordinatorLayout @JvmOverloads constructor(context: Context?, attrs: AttributeSet? = null) : CoordinatorLayout(context!!, attrs) {
+class DraggableCoordinatorLayout @JvmOverloads constructor(
+    context: Context?,
+    attrs: AttributeSet? = null
+) : CoordinatorLayout(context!!, attrs) {
     /** A listener to use when a child view is being dragged  */
     interface ViewDragListener {
         fun onViewCaptured(view: View, i: Int)
@@ -64,11 +69,17 @@ class DraggableCoordinatorLayout @JvmOverloads constructor(context: Context?, at
         }
 
         override fun clampViewPositionHorizontal(view: View, left: Int, dx: Int): Int {
-            return left
+            val leftBound = paddingLeft
+            val rightBound = width - view.width - paddingRight
+            val newLeft = min(max(left, leftBound), rightBound)
+            return newLeft
         }
 
         override fun clampViewPositionVertical(view: View, top: Int, dy: Int): Int {
-            return top
+            val topBound = paddingTop
+            val bottomBound = height - view.height - paddingBottom
+            val newTop = min(max(top, topBound), bottomBound)
+            return newTop
         }
     }
 

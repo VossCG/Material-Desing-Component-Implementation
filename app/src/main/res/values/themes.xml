@@ -29,6 +29,10 @@
         <item name="snackbarStyle">@style/Widget.App.Snackbar</item>
 
         <item name="materialAlertDialogTheme">@style/ThemeOverlay.App.MaterialAlertDialog</item>
+    </style>
 
+    <style name="Theme.LienarLayout.TextButton.Icon" parent="Theme.IThomeIRonContest">
+        <item name="buttonStyle">@style/Widget.App.Button.TextButton.Icon.Top</item>
+        <item name="materialButtonStyle">@style/Widget.App.Button.TextButton.Icon.Top</item>
     </style>
 </resources>
