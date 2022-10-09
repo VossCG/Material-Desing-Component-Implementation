@@ -2,6 +2,7 @@ package com.voss.ithomeironcontest.bottomsheets
 
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.navigation.fragment.FragmentNavigatorExtras
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.bottomsheet.BottomSheetBehavior
@@ -12,8 +13,23 @@ import com.voss.ithomeironcontest.databinding.FragmentStandardBottomsheetsBindin
 class StandardBottomSheetsFragment:BaseFragment<FragmentStandardBottomsheetsBinding>(FragmentStandardBottomsheetsBinding::inflate) {
     private val modalBottomSheet = ModalBottomSheetFragment()
     private val navController by lazy { findNavController() }
+    private val bottomSheetCallback = object : BottomSheetBehavior.BottomSheetCallback() {
+
+        override fun onStateChanged(bottomSheet: View, newState: Int) {
+            Toast.makeText(requireContext(),"State Changed",Toast.LENGTH_SHORT).show()
+        }
+
+        override fun onSlide(bottomSheet: View, slideOffset: Float) {
+            // do something
+        }
+    }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        val standardBehavior = BottomSheetBehavior.from(binding.standardBottomSheet)
+
+        standardBehavior.addBottomSheetCallback(bottomSheetCallback)
 
         binding.showBottomSheetBtn.setOnClickListener {
             val behavior = BottomSheetBehavior.from(binding.standardBottomSheet)

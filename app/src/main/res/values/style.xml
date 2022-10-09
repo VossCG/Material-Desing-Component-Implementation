@@ -345,6 +345,15 @@
         <item name="colorOnSurface">@color/lightBlue</item>
     </style>
 
+    <style name="ModalBottomSheet" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="backgroundTint">@color/darkGrey</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.App.LargeComponent</item>
+    </style>
+
+    <style name="ModalBottomSheetDialog" parent="ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/ModalBottomSheet</item>
+    </style>
+
     <style name="ShapeAppearance.App.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
         <item name="cornerFamily">cut</item>
         <item name="cornerSize">8dp</item>
@@ -359,6 +368,11 @@
     <style name="ShapeAppearance.App.BottomSheet.Collapsed" parent="ShapeAppearance.MaterialComponents.MediumComponent">
         <item name="cornerFamilyTopLeft">rounded</item>
         <item name="cornerSizeTopLeft">20dp</item>
+    </style>
+
+    <style name="ShapeAppearance.App.LargeComponent" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">24dp</item>
     </style>
 
 </resources>
