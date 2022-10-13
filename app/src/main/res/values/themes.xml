@@ -27,7 +27,6 @@
         <item name="actionBarTheme">@style/ThemeOverlay.MaterialComponents.Dark.ActionBar</item>
 
         <item name="snackbarStyle">@style/Widget.App.Snackbar</item>
-
         <item name="materialAlertDialogTheme">@style/ThemeOverlay.App.MaterialAlertDialog</item>
     </style>
 

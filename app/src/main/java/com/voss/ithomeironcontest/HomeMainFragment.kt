@@ -64,5 +64,8 @@ class HomeMainFragment:BaseFragment<FragmentMainHomeBinding>(FragmentMainHomeBin
         binding.bottomSheetBtn.setOnClickListener {
             navController.navigate(R.id.action_homeMainFragment_to_standardBottomSheetsFragment)
         }
+        binding.navigationDrawerBtn.setOnClickListener {
+            navController.navigate(R.id.action_homeMainFragment_to_navigationDrawerFragment)
+        }
     }
 }

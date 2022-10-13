@@ -24,6 +24,7 @@
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">10dp</item>
     </style>
+    ㄌ
 
     <style name="Widget.App.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
         <item name="materialThemeOverlay">@style/ThemeOverlay.App.BottomNavigationView</item>
@@ -72,6 +73,7 @@
         <item name="android:padding">10dp</item>
         <item name="android:textSize">20sp</item>
     </style>
+
     <style name="Widget.App.Button.TextButton.Icon" parent="Widget.MaterialComponents.Button.TextButton.Icon">
         <item name="android:textColor">@color/white</item>
         <item name="android:gravity">start|center_vertical</item>
@@ -257,8 +259,10 @@
         <item name="buttonBarPositiveButtonStyle">@style/Widget.App.Button.TextButton.Dialog</item>
         <item name="buttonBarNegativeButtonStyle">@style/Widget.App.Button.TextButton.Dialog</item>
         <item name="buttonBarNeutralButtonStyle">@style/Widget.App.Button.TextButton.Dialog</item>
-        <item name="materialAlertDialogTitleTextStyle">@style/MaterialAlertDialog.App.Title.Text</item>
-        <item name="materialAlertDialogBodyTextStyle">@style/MaterialAlertDialog.App.Body.Text</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/MaterialAlertDialog.App.Title.Text
+        </item>
+        <item name="materialAlertDialogBodyTextStyle">@style/MaterialAlertDialog.App.Body.Text
+        </item>
     </style>
 
     <style name="MaterialAlertDialog.App" parent="MaterialAlertDialog.MaterialComponents">
@@ -375,4 +379,38 @@
         <item name="cornerSize">24dp</item>
     </style>
 
+    <style name="Widget.App.NavigationView" parent="Widget.MaterialComponents.NavigationView">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.NavigationView</item>
+        <item name="itemIconTint">@color/navigation_item_color</item>
+        <item name="itemTextColor">@color/navigation_item_color</item>
+        <item name="itemShapeFillColor">@color/navigation_item_background_color</item>
+    </style>
+
+    <style name="Widget.App.NavigationView.Bottom">
+        <!-- to override the default value is 320dp limit -->
+        <item name="android:maxWidth">1000dp</item>
+    </style>
+
+    <style name="ThemeOverlay.App.NavigationView" parent="">
+        <!-- Container background color-->
+        <item name="colorSurface">@color/darkBlue</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.App.Subtitle2</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.App.Body2</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
+    </style>
+
+    <style name="TextAppearance.App.Headline6" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/alatsi</item>
+        <item name="android:fontFamily">@font/alatsi</item>
+    </style>
+
+    <style name="TextAppearance.App.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/alatsi</item>
+        <item name="android:fontFamily">@font/alatsi</item>
+    </style>
+
+    <style name="TextAppearance.App.Body2" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/alatsi</item>
+        <item name="android:fontFamily">@font/alatsi</item>
+    </style>
 </resources>

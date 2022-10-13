@@ -69,6 +69,9 @@
         <action
             android:id="@+id/action_homeMainFragment_to_standardBottomSheetsFragment"
             app:destination="@id/standardBottomSheetsFragment" />
+        <action
+            android:id="@+id/action_homeMainFragment_to_navigationDrawerFragment"
+            app:destination="@id/navigationDrawerFragment" />
     </fragment>
     <fragment
         android:id="@+id/bottomNavigationFragment"
@@ -176,4 +179,26 @@
         tools:layout="@layout/fragment_expanding_bottom_sheet"
         android:name="com.voss.ithomeironcontest.bottomsheets.ExpandingBottomSheetFragment"
         android:label="ExpandingBottomSheetFragment" />
+    <fragment
+        android:id="@+id/navigationDrawerFragment"
+        tools:layout="@layout/fragment_navigationdrawer"
+        android:name="com.voss.ithomeironcontest.navigationdrawer.NavigationDrawerFragment"
+        android:label="NavigationDrawerFragment" >
+        <action
+            android:id="@+id/action_navigationDrawerFragment_to_modalNavigationDrawerFragment"
+            app:destination="@id/modalNavigationDrawerFragment" />
+        <action
+            android:id="@+id/action_navigationDrawerFragment_to_bottomNavigationDrawerFragment"
+            app:destination="@id/bottomNavigationDrawerFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_modal_navigation_drawer"
+        android:id="@+id/modalNavigationDrawerFragment"
+        android:name="com.voss.ithomeironcontest.navigationdrawer.ModalNavigationDrawerFragment"
+        android:label="ModalNavigationDrawerFragment" />
+    <fragment
+        android:id="@+id/bottomNavigationDrawerFragment"
+        tools:layout="@layout/fragment_bottom_navigation_drawer"
+        android:name="com.voss.ithomeironcontest.navigationdrawer.BottomNavigationDrawerFragment"
+        android:label="BottomNavigationDrawerFragment" />
 </navigation>
