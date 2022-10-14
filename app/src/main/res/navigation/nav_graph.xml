@@ -7,10 +7,13 @@
 
     <fragment
         android:id="@+id/tabsFragment"
-        android:name="com.voss.ithomeironcontest.tabs.TabsFragment"
+        android:name="com.voss.ithomeironcontest.tabs.FixedTabsFragment"
         android:label="TabsFragment"
-        tools:layout="@layout/fragment_tabs">
+        tools:layout="@layout/fragment_fixed_tabs">
 
+        <action
+            android:id="@+id/action_tabsFragment_to_scrollableTabsFragment"
+            app:destination="@id/scrollableTabsFragment" />
     </fragment>
 
     <fragment
@@ -201,4 +204,10 @@
         tools:layout="@layout/fragment_bottom_navigation_drawer"
         android:name="com.voss.ithomeironcontest.navigationdrawer.BottomNavigationDrawerFragment"
         android:label="BottomNavigationDrawerFragment" />
+    <fragment
+        android:id="@+id/scrollableTabsFragment"
+        tools:layout="@layout/fragment_scrollable_tabs"
+        android:name="com.voss.ithomeironcontest.tabs.ScrollableTabsFragment"
+        android:label="ScrollableTabsFragment" >
+    </fragment>
 </navigation>

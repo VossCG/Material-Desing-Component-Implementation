@@ -413,4 +413,27 @@
         <item name="fontFamily">@font/alatsi</item>
         <item name="android:fontFamily">@font/alatsi</item>
     </style>
+
+    <style name="Widget.App.TabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.TabLayout</item>
+        <item name="tabTextAppearance">@style/TextAppearance.App.Button</item>
+    </style>
+
+    <style name="Widget.App.TabLayout.indicator.stretch" parent="Widget.App.TabLayout">
+        <item name="tabIndicatorGravity">stretch</item>
+        <item name="tabIndicatorColor">@android:color/holo_blue_dark</item>
+        <item name="tabIndicatorAnimationDuration">300</item>
+        <item name="tabIndicatorAnimationMode">elastic</item>
+    </style>
+
+    <style name="TextAppearance.App.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/advent_pro_medium</item>
+        <item name="android:fontFamily">@font/advent_pro_medium</item>
+    </style>
+
+    <style name="ThemeOverlay.App.TabLayout" parent="">
+        <item name="colorPrimary">@android:color/holo_orange_light</item>
+        <item name="colorSurface">@color/darkBlue</item>
+        <item name="colorOnSurface">@color/white</item>
+    </style>
 </resources>

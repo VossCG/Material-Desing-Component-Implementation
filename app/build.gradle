@@ -41,6 +41,9 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter'
     def nav_version = "2.4.2"
 
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+
+
     implementation "androidx.recyclerview:recyclerview-selection:1.1.0"
 
     // Navigation
