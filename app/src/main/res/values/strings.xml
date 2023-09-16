@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">IThome IRon Contest</string>
-    <string name="trans_expand_bottomsheet">ExpandingBottomSheet</string>
-    <array name="ranger_slider" >
-        <item>10</item>
-        <item>40</item>
-    </array>
-</resources>
